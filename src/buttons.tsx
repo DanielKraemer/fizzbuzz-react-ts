@@ -57,7 +57,7 @@ export function Fizz(props: { parentStateChanger: (arg0: number) => void, value:
     };
 
     return (
-        <button onClick={buttonHandler} className="inline-block mx-4 bg-stone-600 px-4 transform hover:scale-105 duration-300 motion-reduce:transform-none rounded-md">Fizz!</button>
+        <button onClick={buttonHandler} className="mx-4 bg-stone-600 px-4 transform hover:scale-105 duration-300 motion-reduce:transform-none rounded-md">Fizz!</button>
     );
 }
 
@@ -72,7 +72,7 @@ export function Buzz(props: { parentStateChanger: (arg0: number) => void, value:
     };
 
     return (
-        <button onClick={buttonHandler} className="inline-block mx-4 bg-stone-600 px-4 transform hover:scale-105 duration-300 motion-reduce:transform-none rounded-md">Buzz!</button>
+        <button onClick={buttonHandler} className="mx-4 bg-stone-600 px-4 transform hover:scale-105 duration-300 motion-reduce:transform-none rounded-md">Buzz!</button>
     );
 }
 
@@ -87,6 +87,6 @@ export function FizzBuzz(props: { parentStateChanger: (arg0: number) => void, va
     };
 
     return (
-        <button onClick={buttonHandler} className="inline-block mx-4 bg-stone-600 px-4 transform hover:scale-105 duration-300 motion-reduce:transform-none rounded-md">FizzBuzz!</button>
+        <button onClick={buttonHandler} className="mx-4 bg-stone-600 px-4 transform hover:scale-105 duration-300 motion-reduce:transform-none rounded-md">FizzBuzz!</button>
     );
 }
