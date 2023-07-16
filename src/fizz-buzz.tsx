@@ -9,13 +9,7 @@ class FizzBuzz extends React.Component {
     };
 
     setStateOfParent = (counter: number) => {
-        // eslint-disable-next-line no-console
-        console.log(counter);
-        this.setState((state: {count: number}, props: {counter: number}) => ({
-            count: state.count + props.counter,
-        }));
-        // eslint-disable-next-line no-console
-        console.log(this.state.count);
+        this.setState({ count: counter });
     };
 
     // eslint-disable-next-line class-methods-use-this

@@ -38,8 +38,8 @@ export default function Reset(props: { parentStateChanger: (arg0: number) => voi
 export function CountUp(props: { parentStateChanger: (arg0: number) => void, value: number }) {
     const buttonHandler = () => {
         if (checkFizzBuzz('countUp', props.value)) {
-            console.log('countUP');
             props.parentStateChanger(props.value + 1);
+            return;
         }
         props.parentStateChanger(1);
     };
@@ -51,7 +51,10 @@ export function CountUp(props: { parentStateChanger: (arg0: number) => void, val
 
 export function Fizz(props: { parentStateChanger: (arg0: number) => void, value: number }) {
     const buttonHandler = () => {
-        if (checkFizzBuzz('fizz', props.value)) props.parentStateChanger(props.value + 1);
+        if (checkFizzBuzz('fizz', props.value)) {
+            props.parentStateChanger(props.value + 1);
+            return;
+        }
         props.parentStateChanger(1);
     };
 
@@ -62,7 +65,10 @@ export function Fizz(props: { parentStateChanger: (arg0: number) => void, value:
 
 export function Buzz(props: { parentStateChanger: (arg0: number) => void, value: number }) {
     const buttonHandler = () => {
-        if (checkFizzBuzz('buzz', props.value)) props.parentStateChanger(props.value + 1);
+        if (checkFizzBuzz('buzz', props.value)) {
+            props.parentStateChanger(props.value + 1);
+            return;
+        }
         props.parentStateChanger(1);
     };
 
@@ -73,7 +79,10 @@ export function Buzz(props: { parentStateChanger: (arg0: number) => void, value:
 
 export function FizzBuzz(props: { parentStateChanger: (arg0: number) => void, value: number }) {
     const buttonHandler = () => {
-        if (checkFizzBuzz('fizzBuzz', props.value)) props.parentStateChanger(props.value + 1);
+        if (checkFizzBuzz('fizzBuzz', props.value)) {
+            props.parentStateChanger(props.value + 1);
+            return;
+        }
         props.parentStateChanger(1);
     };
 
