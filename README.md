@@ -1,5 +1,9 @@
 # fizzbuzz-react-ts
+
 FizzBuzz Game made with React using typescript lang
+
+See: https://de.wikipedia.org/wiki/Fizz_buzz
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
